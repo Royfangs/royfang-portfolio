@@ -1,0 +1,15 @@
+.Portfolio {
+  padding: 60px 0;
+}
+
+.Portfolio__heading {
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Portfolio__projects {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 0;
+}

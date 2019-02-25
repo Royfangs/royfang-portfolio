@@ -1,0 +1,16 @@
+.NavigationItem {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 80px;
+  text-decoration: none;
+
+  &--active {
+    color: #1BA79C;
+  }
+  
+  &:hover {
+    color: #1BA79C;
+  }
+}

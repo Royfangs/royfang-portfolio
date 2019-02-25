@@ -1,0 +1,62 @@
+.Contact {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.Contact__icon {
+  font-size: 70px;
+}
+
+.Contact__heading {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.Contact__subtitle {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.Contact__form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 0;
+
+  @media screen and (max-width: 750px) {
+    width: 70%;
+  }
+}
+
+.Contact__input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.Contact__button {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #3999D7;
+  font-size: 16px;
+  float: right;
+  padding: 10px 20px;
+  outline: none;
+  transition: all .2s ease-out;
+
+  &:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.438);
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.438);
+    transform: translateY(0);
+  }
+}
