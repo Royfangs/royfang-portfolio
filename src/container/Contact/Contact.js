@@ -10,7 +10,9 @@ class Contact extends Component {
       name: '',
       email: '',
       message: ''
-    }
+    },
+    postCommentStatus: false,
+    errorStatus: false
   }
 
   nameChangeHandler = (e) => {
@@ -20,7 +22,6 @@ class Contact extends Component {
         name: e.target.value
       }
     });
-    console.log(e.target.value)
   }
 
   emailChangeHandler = (e) => {
@@ -41,6 +42,12 @@ class Contact extends Component {
     });
   }
 
+  inputCleanHandler = () => {
+    document.querySelectorAll('.Contact__input').forEach(item => {
+      item.value = '';
+    });
+  }
+
   postComment = () => {
     const comment = {
       name: this.state.comment.name,
@@ -51,20 +58,43 @@ class Contact extends Component {
       return;
     } else {
       axios.post('/comment.json', comment)
-      .then(response => console.log(response))
-      .catch(err => console.log(err));
+      .then(response => {
+        this.setState({
+          comment: {
+            name: '',
+            email: '',
+            message: ''
+          },
+          postCommentStatus: true,
+          errorStatus: false
+        });
+
+        this.inputCleanHandler();
+      })
+      .catch(err => {
+        this.setState({
+          comment: {
+            name: '',
+            email: '',
+            message: ''
+          },
+          postCommentStatus: false,
+          errorStatus: true
+        });
+        
+        this.inputCleanHandler();
+      });
     }
   }
 
-  // PostForm = () => {
-  //   axios.post('/message.json')
-  // }
-
   render () {
+    const contactClassName = `Contact__icon ${this.state.postCommentStatus ? 'Contact__icon--success' : this.state.errorStatus ? 'Contact__icon--fail' : null}`
+
     return (
       <div className="Contact">
         <h1 className="Contact__heading">Contact</h1>
-        <FontAwesomeIcon className="Contact__icon" icon="envelope" />
+        <FontAwesomeIcon className={contactClassName} icon="envelope" />
+        {this.state.errorStatus ? <h3 className="Contact__subtitle Contact__subtitle--fail">Email fail to send out, please try again.</h3> : this.state.postCommentStatus ? <h3 className="Contact__subtitle Contact__subtitle--success">Email send out succeed!.</h3> : null}
         <h3 className="Contact__subtitle">If you have any questions or want to collaborate, welcome to send message.</h3>
         <form className="Contact__form">
           <input className="Contact__input" type="text" name="name" placeholder="Name" onChange={(e) => this.nameChangeHandler(e)} required/>

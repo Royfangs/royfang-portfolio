@@ -7,6 +7,17 @@
   font-size: 70px;
 }
 
+.Contact__icon--success,
+.Contact__subtitle--success {
+  color: rgb(15, 161, 15);
+}
+
+.Contact__icon--fail,
+.Contact__subtitle--fail {
+  color: rgb(216, 2, 2);
+}
+
+
 .Contact__heading {
   font-size: 70px;
   text-transform: uppercase;

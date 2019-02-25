@@ -4,7 +4,6 @@ import './PortfolioProjects.scss';
 
 const PortfolioProjects = ({ projects }) => {
   const projectsArr = Object.keys(projects).map(item => {
-    console.log(projects[item].name);
     return (
       <div className={`Portfolio__card ${projects[item].backgroundPosition}`} style={{ backgroundImage: `url(${projects[item].image})` }} key={item}>
         <div className="Portfolio__hover-layer">
