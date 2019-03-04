@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/royfang-portfolio/static/media/expensify.20bb2b72.png"
   },
   {
-    "revision": "fc1bce4e5d375fd34b3f",
-    "url": "/royfang-portfolio/static/css/main.979ace4c.chunk.css"
+    "revision": "f27153b9d54a92ce7824",
+    "url": "/royfang-portfolio/static/css/main.acdee755.chunk.css"
   },
   {
     "revision": "8f041c0347f12b0fba2e",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/royfang-portfolio/static/media/portfolio.75a61a21.jpg"
   },
   {
-    "revision": "fc1bce4e5d375fd34b3f",
-    "url": "/royfang-portfolio/static/js/main.fc1bce4e.chunk.js"
+    "revision": "f27153b9d54a92ce7824",
+    "url": "/royfang-portfolio/static/js/main.f27153b9.chunk.js"
   },
   {
     "revision": "8a235c402caab6b531982cc3a9fa7470",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/royfang-portfolio/static/media/nodejs-shop-example.2ca8e6e2.png"
   },
   {
-    "revision": "edb26d1164f3aad837c49cef0be5bc05",
+    "revision": "abc8a3686fce69c6974e0ad82c637ed5",
     "url": "/royfang-portfolio/index.html"
   }
 ];
