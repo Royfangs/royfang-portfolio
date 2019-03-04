@@ -11,19 +11,25 @@ class About extends Component {
       css3: 'css3-alt',
       js: 'js',
       react: 'react',
-      nodejs: 'node-js'
+      nodejs: 'node-js',
+      npm: 'npm',
+      github: 'github-square'
     }
   }
 
   render() {
     return (
       <div className="About">
-        <h1 className="About__heading">About me</h1>
-        <div className="About__area">
-          <AboutImage />
-          <AboutIntro />
+        <div className="About__intro">
+          <h1 className="About__heading">About me</h1>
+          <div className="About__area">
+            <AboutImage />
+            <AboutIntro />
+          </div>
         </div>
-        <AboutToolbox toolbox={this.state.toolbox}/>
+        <div className="About__toolbox">
+          <AboutToolbox toolbox={this.state.toolbox}/>
+        </div>
       </div>
     );
   }

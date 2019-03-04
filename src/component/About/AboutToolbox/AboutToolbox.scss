@@ -3,7 +3,8 @@
 // }
 
 .About__Sub-heading {
-  font-size: 40px;
+  color: #fff;
+  font-size: 80px;
   text-align: center;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -17,13 +18,14 @@
   justify-content: center;
   list-style-type: none;
   text-align: center;
-  padding: 30px 0;
+  padding: 60px 0 30px 0;
 }
 
 .About__Toolbox-icon {
+  color: #fff;
   font-size: 100px;
   transition: all .3s ease-out;
-  margin: 0 20px;
+  margin: 10px 20px;
 
   &:hover {
     transform: translateY(-7px);
@@ -42,26 +44,79 @@
   }
 }
 
-.html5:hover {
-  color: #E44D26;
+.html5 {
+  
+  @media screen and (max-width: 700px) {
+    color: #E44D26;
+  }
+
+  &:hover {
+    color: #E44D26;
+  }
 }
 
 .css3, .css3-alt {
+
+  @media screen and (max-width: 700px) {
+    color: #167DBE;
+  }
+
   &:hover {
     color: #167DBE;
   }
 }
 
-.js:hover {
-  color: #F7E018;
+.js {
+
+  @media screen and (max-width: 700px) {
+    color: #F7E018;
+  }
+
+  &:hover {
+    color: #F7E018;
+  }
 }
 
-.react:hover {
-  color: #00BDFF;
+.react {
+
+  @media screen and (max-width: 700px) {
+    color: #00BDFF;
+  }
+
+  &:hover {
+    color: #00BDFF;
+  }
 }
 
 .node-js, .nodejs {
+
+  @media screen and (max-width: 700px) {
+    color: #78B743;
+  }
+
   &:hover {
     color: #78B743;
+  }
+}
+
+.npm {
+
+  @media screen and (max-width: 700px) {
+    color: #C53635;
+  }
+
+  &:hover {
+    color: #C53635;
+  }
+}
+
+.github, .github-square {
+
+  @media screen and (max-width: 700px) {
+    color: #2AA9DA;
+  }
+
+  &:hover {
+    color: #2AA9DA;
   }
 }
