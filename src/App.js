@@ -46,10 +46,10 @@ class App extends Component {
         {this.state.NavigationFixed ? <Navigation NavigationFixed={this.state.NavigationFixed}/> : null}
         <div className="App">
           <Switch>
-            <Route path="/" exact component={About}/>
+            <Route path="/about" exact component={About}/>
             <Route path="/portfolio" component={Portfolio}/>
             <Route path="/contact" component={Contact}/>
-            <Redirect to="/"/>
+            <Redirect to="/about"/>
           </Switch>
         </div>
         <Footer />
