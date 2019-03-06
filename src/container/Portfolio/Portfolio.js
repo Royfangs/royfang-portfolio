@@ -6,6 +6,7 @@ import SmartBrainImage from '../../asset/smart-brain.png';
 import MtgSearcherImage from '../../asset/mtg-searche.png';
 import GraceImage from '../../asset/grace.png';
 import NodeShopImage from '../../asset/nodejs-shop-example.png';
+import NatoursImage from '../../asset/natours.png';
 
 
 class Portfolio extends Component {
@@ -13,9 +14,16 @@ class Portfolio extends Component {
     projects: {
       grace: {
         name: 'GRACE',
-        tools: ['html5', 'css3-alt', 'js'],
+        tools: ['html5', 'sass', 'js'],
         url: 'https://royfangs.github.io/grace/',
         image: GraceImage,
+        backgroundPosition: 'Portfolio__card--background-position-top'
+      },
+      Natours: {
+        name: 'Natours',
+        tools: ['html5','css3-alt', 'sass'],
+        url: 'https://royfangs.github.io/Natours/',
+        image: NatoursImage,
         backgroundPosition: 'Portfolio__card--background-position-top'
       },
       expensify: {
@@ -32,18 +40,18 @@ class Portfolio extends Component {
         image: SmartBrainImage,
         backgroundPosition: 'Portfolio__card--background-position-top'
       },
-      mtgSearcher: {
-        name: 'MTG Searcher',
-        tools: ['html5', 'css3-alt', 'js'],
-        url: 'https://royfangs.github.io/MTG-searcher/',
-        image: MtgSearcherImage,
-        backgroundPosition: 'Portfolio__card--background-position-top'
-      },
       nodeShop: {
         name: 'Online Shop',
-        tools: ['html5', 'css3-alt', 'js', 'node-js'],
+        tools: ['css3-alt', 'js', 'node-js'],
         url: 'https://nodejs-shop-example.herokuapp.com/',
         image: NodeShopImage,
+        backgroundPosition: 'Portfolio__card--background-position-top'
+      },
+      mtgSearcher: {
+        name: 'MTG Carder',
+        tools: ['html5', 'sass', 'js'],
+        url: 'https://royfangs.github.io/MTG-searcher/',
+        image: MtgSearcherImage,
         backgroundPosition: 'Portfolio__card--background-position-top'
       }
     }

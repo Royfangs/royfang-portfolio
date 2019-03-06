@@ -92,6 +92,12 @@
   opacity: 0;
 
   &:hover {
-      transform: translate(-50%, -5px);
+    transform: translate(-50%, -5px);
+    background-color: rgb(60, 214, 201);
+  }
+
+  &:active {
+    transform: translate(-50%, 0);
+    background-color: #1BA79C;
   }
 }

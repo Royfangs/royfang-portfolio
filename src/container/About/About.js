@@ -9,6 +9,7 @@ class About extends Component {
     toolbox: {
       html5: 'html5',
       css3: 'css3-alt',
+      sass: 'sass',
       js: 'js',
       react: 'react',
       nodejs: 'node-js',

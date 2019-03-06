@@ -94,7 +94,7 @@ class Contact extends Component {
       <div className="Contact">
         <h1 className="Contact__heading">Contact</h1>
         <FontAwesomeIcon className={contactClassName} icon="envelope" />
-        {this.state.errorStatus ? <h3 className="Contact__subtitle Contact__subtitle--fail">Email fail to send out, please try again.</h3> : this.state.postCommentStatus ? <h3 className="Contact__subtitle Contact__subtitle--success">Email send out succeed!.</h3> : null}
+        {this.state.errorStatus ? <h3 className="Contact__subtitle Contact__subtitle--fail">Message fail to send out, please try again.</h3> : this.state.postCommentStatus ? <h3 className="Contact__subtitle Contact__subtitle--success">Message sent out succeed!</h3> : null}
         <h3 className="Contact__subtitle">If you have any questions or want to collaborate, welcome to send message.</h3>
         <form className="Contact__form">
           <input className="Contact__input" type="text" name="name" placeholder="Name" onChange={(e) => this.nameChangeHandler(e)} required/>

@@ -42,6 +42,10 @@
   @media screen and (max-width: 540px) {
     font-size: 90px;
   }
+
+  @media screen and (max-width: 390px) {
+    width: 100%;
+  }
 }
 
 .html5 {
@@ -118,5 +122,15 @@
 
   &:hover {
     color: #2AA9DA;
+  }
+}
+
+.sass {
+  @media screen and (max-width: 700px) {
+    color: #C76494;
+  }
+
+  &:hover {
+    color: #C76494;
   }
 }
