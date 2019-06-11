@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/royfang-portfolio/precache-manifest.e27298ca80537edb49aa3db02c642a04.js"
+  "/royfang-portfolio/precache-manifest.056333ace09508cbb74ccda0d4250447.js"
 );
 
 workbox.clientsClaim();

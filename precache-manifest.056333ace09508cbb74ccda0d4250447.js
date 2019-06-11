@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/royfang-portfolio/static/media/smart-brain.8a235c40.png"
   },
   {
-    "revision": "d0db175a06f006923d0b",
+    "revision": "737833d3947be80544df",
     "url": "/royfang-portfolio/static/css/main.694b694b.chunk.css"
   },
   {
-    "revision": "994a9076d203a87c2c8f",
-    "url": "/royfang-portfolio/static/js/1.994a9076.chunk.js"
+    "revision": "46dfb3e550e3f678d9f7",
+    "url": "/royfang-portfolio/static/js/1.46dfb3e5.chunk.js"
   },
   {
     "revision": "ccdd8bddbfff308fc680",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/royfang-portfolio/static/media/expensify.20bb2b72.png"
   },
   {
-    "revision": "d0db175a06f006923d0b",
-    "url": "/royfang-portfolio/static/js/main.d0db175a.chunk.js"
+    "revision": "737833d3947be80544df",
+    "url": "/royfang-portfolio/static/js/main.737833d3.chunk.js"
   },
   {
     "revision": "89921d10db10f33a8b21b1d69f36f77a",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/royfang-portfolio/static/media/natours.76d8dd17.png"
   },
   {
-    "revision": "61fd503f3f91cf6db5da19419e9ea824",
+    "revision": "009990919e6fd9e1fe4d06f32e0b1a94",
     "url": "/royfang-portfolio/index.html"
   }
 ];
